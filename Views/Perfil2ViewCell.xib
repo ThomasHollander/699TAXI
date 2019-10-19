@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="Perfil2ViewCell" customModule="UnTaxi_temp_caseinsensitive_rename" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo Electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sv-fb-bVQ">
+                        <rect key="frame" x="12" y="8" width="276" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7sv-fb-bVQ" secondAttribute="height" multiplier="296:21" constant="1.1428571428571672" id="8d8-bF-I3d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ValorActual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-Ex-IuW">
+                        <rect key="frame" x="8" y="40" width="284" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="3h4-Ex-IuW" secondAttribute="height" multiplier="304:21" constant="1.7142857142857224" id="Sy5-hR-vZX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NuevoCorreo" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nb5-O2-nRr">
+                        <rect key="frame" x="8" y="40" width="284" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Nb5-O2-nRr" secondAttribute="height" multiplier="152:15" id="39m-9M-ms6"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.83963401849999997" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Nb5-O2-nRr" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="JVo-Zk-h07"/>
+                    <constraint firstItem="3h4-Ex-IuW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LSY-1o-0f1"/>
+                    <constraint firstItem="Nb5-O2-nRr" firstAttribute="top" secondItem="7sv-fb-bVQ" secondAttribute="bottom" constant="12.5" id="LwH-f4-cy8"/>
+                    <constraint firstItem="Nb5-O2-nRr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="QGf-4B-4nV"/>
+                    <constraint firstItem="7sv-fb-bVQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="Waf-jL-ROZ"/>
+                    <constraint firstItem="3h4-Ex-IuW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="X66-iB-x1r"/>
+                    <constraint firstItem="3h4-Ex-IuW" firstAttribute="top" secondItem="7sv-fb-bVQ" secondAttribute="bottom" constant="12.5" id="nTk-VH-dJI"/>
+                    <constraint firstItem="7sv-fb-bVQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="pOI-eY-1EF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7sv-fb-bVQ" secondAttribute="trailing" constant="4" id="zWt-Ro-UFy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="NombreCampo" destination="7sv-fb-bVQ" id="HrN-1x-VZR"/>
+                <outlet property="NuevoValor" destination="Nb5-O2-nRr" id="xHa-Kn-dR5"/>
+                <outlet property="ValorActual" destination="3h4-Ex-IuW" id="nuY-iu-jqh"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="123"/>
+        </tableViewCell>
+    </objects>
+</document>

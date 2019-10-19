@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PerfilViewCell" rowHeight="85" id="KGk-i7-Jjw" customClass="PerfilViewCell" customModule="UnTaxi_temp_caseinsensitive_rename" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ValorActual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tug-7j-ABV">
+                        <rect key="frame" x="8" y="40" width="284" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tug-7j-ABV" secondAttribute="height" multiplier="304:21" constant="1.7142857142857224" id="SHb-Qf-IML"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NuevoTelefono" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sP5-y9-KPR">
+                        <rect key="frame" x="8" y="40" width="284" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sP5-y9-KPR" secondAttribute="height" multiplier="152:15" id="pA2-GH-ft4"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gR1-9Y-cGt">
+                        <rect key="frame" x="12" y="8" width="276" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gR1-9Y-cGt" secondAttribute="height" multiplier="296:21" id="jaZ-gO-YOL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.83963401849999997" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="tug-7j-ABV" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="2uS-oz-rmk"/>
+                    <constraint firstItem="gR1-9Y-cGt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="4BH-BI-Ra3"/>
+                    <constraint firstItem="sP5-y9-KPR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="90B-5g-spm"/>
+                    <constraint firstItem="tug-7j-ABV" firstAttribute="top" secondItem="gR1-9Y-cGt" secondAttribute="bottom" constant="12.5" id="KKM-JP-itB"/>
+                    <constraint firstItem="tug-7j-ABV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="RWT-Pr-aSU"/>
+                    <constraint firstItem="sP5-y9-KPR" firstAttribute="top" secondItem="gR1-9Y-cGt" secondAttribute="bottom" constant="12.5" id="aSd-0O-Vft"/>
+                    <constraint firstItem="sP5-y9-KPR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="f7i-5m-yjH"/>
+                    <constraint firstItem="gR1-9Y-cGt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="nLS-xQ-rYg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gR1-9Y-cGt" secondAttribute="trailing" constant="4" id="ncP-gN-d7o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="NombreCampo" destination="gR1-9Y-cGt" id="lx3-dg-Eon"/>
+                <outlet property="NuevoValor" destination="sP5-y9-KPR" id="s0S-Sh-PLh"/>
+                <outlet property="ValorActual" destination="tug-7j-ABV" id="MJn-c9-NhU"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="89.5"/>
+        </tableViewCell>
+    </objects>
+</document>
